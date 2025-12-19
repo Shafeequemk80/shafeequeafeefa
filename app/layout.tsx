@@ -43,9 +43,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cinzel.variable} ${greatVibes.variable} ${montserrat.variable} ${amiri.variable}`}>
       <body
-        className={`${cinzel.variable} ${greatVibes.variable} ${montserrat.variable} ${amiri.variable} antialiased`}
+        className="antialiased"
       >
         {children}
       </body>

@@ -31,7 +31,7 @@ export default function InvitationMessage() {
         className="reveal max-w-3xl mx-auto text-center"
       >
         <div className="gold-frame p-10 bg-white shadow-xl">
-          <p className="mb-6 italic text-lg text-emerald-800">
+          <p className="mb-6 italic text-lg  text-emerald-800">
             "And among His signs is that He created for you mates from among
             yourselves, that you may dwell in tranquility with them; and He put
             love and mercy between your hearts..."
@@ -40,7 +40,7 @@ export default function InvitationMessage() {
             (Surah Ar-Rum, 30:21)
           </p>
 
-          <p className="text-lg leading-relaxed mb-6 text-emerald-900/90">
+          <p className="text-lg font-medium mb-6 ">
             With joyous hearts and seeking the blessings of Allah (SWT), we
             cordially invite you and your family to witness and celebrate the
             Nikah and Walima ceremony of our beloved children.
@@ -48,22 +48,22 @@ export default function InvitationMessage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             <div className="border-t border-b border-emerald-100 py-6">
-              <h3 className="font-script text-xl text-[var(--color-gold)] mb-2 font-bold">
+              <h3 className="font-display text-xl font-medium text-gold-700 mb-2 ">
                 The Groom
               </h3>
               <p className="text-2xl font-semibold text-emerald-900">
-                Muhammad Shafeeque Sa'adi
+                Muhammad Shafeeque <br /> Sa'adi
               </p>
               <p className="text-sm text-gray-500 uppercase mt-2">
                 Son of Mr. & Mrs. Sidheeque
               </p>
             </div>
             <div className="border-t border-b border-emerald-100 py-6">
-              <h3 className="font-display text-xl text-[var(--color-gold)] mb-2 font-bold">
+              <h3 className="font-display text-xl font-medium text-gold-700 mb-2">
                 The Bride
               </h3>
               <p className="text-2xl font-semibold text-emerald-900">
-                Afeefa Fathima Hadiya
+                Afeefa Fathima <br /> Hadiya
               </p>
               <p className="text-sm text-gray-500 uppercase mt-2">
                 Daughter of Mr. & Mrs. Ahmed Kutty

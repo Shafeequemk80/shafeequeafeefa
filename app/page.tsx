@@ -1,9 +1,10 @@
 import FlowerBackground from "./components/FlowerBackground";
 import HeroSection from "./components/HeroSection";
+import GreetingsWall from "./components/GreetingsWall";
 import InvitationMessage from "./components/InvitationMessage";
 import EventDetails from "./components/EventDetails";
-import RSVPForm from "./components/RSVPForm";
 import Footer from "./components/Footer";
+import Youtube from "./components/Youtube";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <HeroSection />
       <InvitationMessage />
       <EventDetails />
-      <RSVPForm />
+      <Youtube />
+      <GreetingsWall />
       <Footer />
     </main>
   );
