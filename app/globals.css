@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gold: #d4af37;
+  --emerald: #064e3b;
+  --cream: #fffdf5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-gold: var(--gold);
+  --color-emerald: var(--emerald);
+  --color-cream: var(--cream);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-arabic: var(--font-amiri);
+  --font-display: var(--font-cinzel);
+  --font-script: var(--font-great-vibes);
+  --font-sans: var(--font-montserrat);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  color: var(--emerald);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Islamic Geometric Background Pattern */
+.pattern-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2.5 7.5L40 10l-7.5 2.5L30 20l-2.5-7.5L20 10l7.5-2.5L30 0zm0 40l2.5 7.5L40 50l-7.5 2.5L30 60l-2.5-7.5L20 50l7.5-2.5L30 40zM10 20l2.5 7.5L20 30l-7.5 2.5L10 40l-2.5-7.5L0 30l7.5-2.5L10 20zm40 0l2.5 7.5L60 30l-7.5 2.5L50 40l-2.5-7.5L40 30l7.5-2.5L50 20z' fill='%23d4af37' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Floating Flower Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Gold Border/Frame Styling */
+.gold-frame {
+  border: 2px solid var(--gold);
+  position: relative;
+}
+.gold-frame::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+/* Scroll Animation Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Button */
+.btn-gold {
+  background-color: var(--emerald);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  background-color: var(--gold);
+  color: var(--emerald);
 }
