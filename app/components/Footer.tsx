@@ -9,7 +9,7 @@ export default function Footer() {
         in goodness."
       </p>
       <p className="mt-8 uppercase tracking-widest">
-        &copy; 2025 Shafeeque & Afeefa Wedding
+        &copy; 2026 Shafeeque & Afeefa Wedding
       </p>
     </footer>
   );
