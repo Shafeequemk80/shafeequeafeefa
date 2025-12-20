@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-12 mx-10 text-center text-emerald-900/60 text-sm">
+    <footer className="py-12 mx-10 bg-[#FFFDF5] text-center text-emerald-900/60 text-sm">
       <p className="font-arabic text-xl font-semibold mb-2">
         بارك الله لكما وبارك عليكما وجمع بينكما في خير
       </p>
