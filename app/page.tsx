@@ -5,6 +5,7 @@ import InvitationMessage from "./components/InvitationMessage";
 import EventDetails from "./components/EventDetails";
 import Footer from "./components/Footer";
 import Youtube from "./components/Youtube";
+import BackgroundMusic from "./components/BackgroundMusic";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <EventDetails />
       <Youtube />
       <GreetingsWall />
+      <BackgroundMusic />
       <Footer />
     </main>
   );

@@ -124,13 +124,14 @@ export default function GreetingsWall() {
         </div>
 
     {/* List */}
-<div className="lg:col-span-3 space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar overscroll-y-contain scroll-smooth">
+<div className="lg:col-span-3 space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar overscroll-auto scroll-smooth">
+
   {greetings.map((g, idx) => (
     <div
       key={idx}
-      className="bg-white p-6 rounded-2xl border-l-4 border-[#D4AF37] shadow-sm animate-fade-in"
+      className="bg-white py-2 px-6  rounded-2xl border-l-4 border-[#D4AF37] shadow-sm animate-fade-in"
     >
-      <div className="flex justify-between items-center mb-2">
+      <div className="flex justify-between items-center mb-1">
         <h4 className="font-bold text-[#064E3B]">{g.name}</h4>
         <span className="text-[10px] text-gray-400 uppercase tracking-tighter">
           {new Date(g.createdAt).toLocaleDateString()}
