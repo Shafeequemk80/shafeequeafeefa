@@ -36,11 +36,6 @@ export const metadata: Metadata = {
   title: "Shafeeque & Afeefa - Wedding Invitation",
   description: "Shafeeque & Afeefa's Wedding Invitation",
 
-  icons: {
-    icon: "/favicon.webp",
-    apple: "/favicon.webp",
-  },
-
   openGraph: {
     title: "Shafeeque & Afeefa - Wedding Invitation",
     description:
